@@ -21,6 +21,13 @@
 --------------------------------------------------------------*/
 html{}
 body {}
+span {}
+a {
+    text-decoration: none;
+    font-family : United Serif Reg;
+    font-size : 18px;
+}
+button {}
 
 
 /*--------------------------------------------------------------
@@ -51,12 +58,6 @@ p {
     letter-spacing : -0.18px;
     color : #1A1A1A;
     color : rgb(26, 26, 26);
-}
-span {}
-a {
-    text-decoration: none;
-    font-family : United Serif Reg;
-    font-size : 18px;
 }
 
 /*--------------------------------------------------------------
