@@ -1,0 +1,76 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Elements
+# Typography
+# Colors:
+    ## Primary Colors:
+        #cb6015
+        #702082
+        #fdda24
+    ## Secondary Colors:
+        #eed484
+        #c4d600
+        #g787b7
+    ## Tertiary Colors:
+        #bbc7d6
+        #d0d3d4
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+html{}
+body {}
+
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+
+h1 {
+    font-family : NewsGoth Cn BT, sans-serif;
+    font-weight : bold;
+    font-size : 48px;
+    text-transform : uppercase;
+    color : #682B82;
+    color : rgb(104, 43, 130);
+}
+h2 {
+    font-family : NewsGoth Cn BT, sans-serif;
+    font-size : 32px;
+    text-transform : uppercase;
+    color : #6384BB;
+    color : rgb(99, 132, 187);
+}
+h3 {}
+h4 {}
+p {
+    font-family : Helvetica LT Std, sans-serif;
+    font-size : 18px;
+    line-height : 140.58px;
+    letter-spacing : -0.18px;
+    color : #1A1A1A;
+    color : rgb(26, 26, 26);
+}
+span {}
+a {
+    text-decoration: none;
+    font-family : United Serif Reg;
+    font-size : 18px;
+}
+
+/*--------------------------------------------------------------
+# Colors
+--------------------------------------------------------------*/
+.gradient {
+    background : -moz-linear-gradient(0% 50% 0deg,rgba(243, 201, 60, 1) 0%,rgba(213, 104, 33, 1) 50%,rgba(104, 43, 130, 1) 100%);
+    background : -webkit-linear-gradient(0deg, rgba(243, 201, 60, 1) 0%, rgba(213, 104, 33, 1) 50%, rgba(104, 43, 130, 1) 100%);
+    background : -webkit-gradient(linear,0% 50% ,100% 50% ,color-stop(0,rgba(243, 201, 60, 1) ),color-stop(0.5,rgba(213, 104, 33, 1) ),color-stop(1,rgba(104, 43, 130, 1) ));
+    background : -o-linear-gradient(0deg, rgba(243, 201, 60, 1) 0%, rgba(213, 104, 33, 1) 50%, rgba(104, 43, 130, 1) 100%);
+    background : -ms-linear-gradient(0deg, rgba(243, 201, 60, 1) 0%, rgba(213, 104, 33, 1) 50%, rgba(104, 43, 130, 1) 100%);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#F3C93C', endColorstr='#682B82' ,GradientType=0)";
+    background : linear-gradient(90deg, rgba(243, 201, 60, 1) 0%, rgba(213, 104, 33, 1) 50%, rgba(104, 43, 130, 1) 100%);
+    opacity : 0.6;
+    filter: alpha(opacity=60) progid:DXImageTransform.Microsoft.Alpha(opacity=60) progid:DXImageTransform.Microsoft.gradient(startColorstr='#F3C93C',endColorstr='#682B82' , GradientType=1);
+}
+
