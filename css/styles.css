@@ -75,3 +75,25 @@ p {
     filter: alpha(opacity=60) progid:DXImageTransform.Microsoft.Alpha(opacity=60) progid:DXImageTransform.Microsoft.gradient(startColorstr='#F3C93C',endColorstr='#682B82' , GradientType=1);
 }
 
+/*----------------------------------------------------------------
+# Author's CSS styles
+-----------------------------------------------------------------*/
+header{
+    background:#eed484;
+}
+nav{
+    display: inline-flex;
+}
+nav ul li{
+    display: inline-flex;
+}
+.menu-item{
+    border: 1px solid black;
+    padding: 3px;
+}
+.button{
+    background: ;
+}
+footer{
+    background-color:#d0d3d4;
+}
