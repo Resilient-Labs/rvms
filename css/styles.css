@@ -80,19 +80,48 @@ p {
 -----------------------------------------------------------------*/
 header{
     background:#eed484;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+
 }
+header img{
+    width:235px;
+}
+
 nav{
     display: inline-flex;
+    align-items: center;
 }
-nav ul li{
-    display: inline-flex;
+nav ul{
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    justify-content: space-around;
 }
 .menu-item{
     border: 1px solid black;
     padding: 3px;
 }
+.gradient{
+    margin-top: -40px;
+}
 .button{
     background:#cb6015;
+}
+.eventpic{
+    width: 250px;
+    height:200px;
+}
+.eventpic img{
+    width: 113%;
+}
+p{
+    line-height: 22px;
+}
+.sponsors{}
+.sponsors img{
+    width: 10%;
 }
 .container{
     display: flex;
@@ -101,7 +130,12 @@ nav ul li{
 }
 .container section{
     width: 30%;
+    background: #eed484;
 }
 footer{
     background-color:#d0d3d4;
+}
+.footerlinks{
+    display: flex;
+    flex-flow: row wrap;
 }
