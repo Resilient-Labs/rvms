@@ -64,14 +64,13 @@ p {
 # Colors
 --------------------------------------------------------------*/
 .gradient {
-    background : -moz-linear-gradient(0% 50% 0deg,rgba(243, 201, 60, 1) 0%,rgba(213, 104, 33, 1) 50%,rgba(104, 43, 130, 1) 100%);
-    background : -webkit-linear-gradient(0deg, rgba(243, 201, 60, 1) 0%, rgba(213, 104, 33, 1) 50%, rgba(104, 43, 130, 1) 100%);
-    background : -webkit-gradient(linear,0% 50% ,100% 50% ,color-stop(0,rgba(243, 201, 60, 1) ),color-stop(0.5,rgba(213, 104, 33, 1) ),color-stop(1,rgba(104, 43, 130, 1) ));
-    background : -o-linear-gradient(0deg, rgba(243, 201, 60, 1) 0%, rgba(213, 104, 33, 1) 50%, rgba(104, 43, 130, 1) 100%);
-    background : -ms-linear-gradient(0deg, rgba(243, 201, 60, 1) 0%, rgba(213, 104, 33, 1) 50%, rgba(104, 43, 130, 1) 100%);
+    background : -moz-linear-gradient(0% 50% 0deg,rgba(243, 201, 60, .6) 0%,rgba(213, 104, 33, .6) 50%,rgba(104, 43, 130, .6) 100%);
+    background : -webkit-linear-gradient(0deg, rgba(243, 201, 60, .6) 0%, rgba(213, 104, 33, .6) 50%, rgba(104, 43, 130, .6) 100%);
+    background : -webkit-gradient(linear,0% 50% ,100% 50% ,color-stop(0,rgba(243, 201, 60, .6) ),color-stop(0.5,rgba(213, 104, 33, .6) ),color-stop(1,rgba(104, 43, 130, .6) ));
+    background : -o-linear-gradient(0deg, rgba(243, 201, 60, .6) 0%, rgba(213, 104, 33, .6) 50%, rgba(104, 43, 130, .6) 100%);
+    background : -ms-linear-gradient(0deg, rgba(243, 201, 60, .6) 0%, rgba(213, 104, 33, .6) 50%, rgba(104, 43, 130, .6) 100%);
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#F3C93C', endColorstr='#682B82' ,GradientType=0)";
-    background : linear-gradient(90deg, rgba(243, 201, 60, 1) 0%, rgba(213, 104, 33, 1) 50%, rgba(104, 43, 130, 1) 100%);
-    opacity : 0.6;
+    background : linear-gradient(90deg, rgba(243, 201, 60, .6) 0%, rgba(213, 104, 33, .6) 50%, rgba(104, 43, 130, .6) 100%);
     filter: alpha(opacity=60) progid:DXImageTransform.Microsoft.Alpha(opacity=60) progid:DXImageTransform.Microsoft.gradient(startColorstr='#F3C93C',endColorstr='#682B82' , GradientType=1);
 }
 
@@ -83,12 +82,14 @@ header{
     display: flex;
     flex-flow: row;
     justify-content: space-between;
-
+    padding: 0 100px;
 }
 header img{
     width:235px;
 }
-
+header ul{
+    min-width: 320px;
+}
 nav{
     display: inline-flex;
     align-items: center;
@@ -103,11 +104,15 @@ nav ul{
     border: 1px solid black;
     padding: 3px;
 }
-.gradient{
-    margin-top: -40px;
+.gradient {
+    padding: 8% 42% 5% 8%;
 }
-.button{
+.gradient p{
+    color: #ffffff;
+}
+button{
     background:#cb6015;
+    color: #ffffff;
 }
 .eventpic{
     width: 250px;
@@ -115,6 +120,9 @@ nav ul{
 }
 .eventpic img{
     width: 113%;
+}
+.eventpic p{
+    padding: 0 30px;
 }
 p{
     line-height: 22px;
@@ -134,8 +142,30 @@ p{
 }
 footer{
     background-color:#d0d3d4;
+    padding: 0 100px;
 }
 .footerlinks{
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-around;
+}
+.footerlinks img{
+    width: 235px;
+}
+footer .copy{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+footer .copy ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: center;
+    min-width: 90px;
+}
+footer ul{
+    list-style: none;
+
+
 }
