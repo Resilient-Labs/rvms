@@ -84,6 +84,10 @@ header{
     justify-content: space-between;
     padding: 0 100px;
 }
+main{
+    max-width: 1000px;
+    margin: 2% auto;
+}
 header img{
     width:235px;
 }
@@ -139,6 +143,24 @@ p{
 .container section{
     width: 30%;
     background: #eed484;
+}
+.message{
+    width: 50%;
+    min-width: 350px;
+}
+.team{
+    display: flex;
+    flex-flow: row wrap;
+}
+.team section{
+    width: 33%;
+}
+.team div{
+    width: 250px;
+    height: 250px;
+}
+.team img{
+    width: 100%;
 }
 footer{
     background-color:#d0d3d4;
