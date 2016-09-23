@@ -148,6 +148,9 @@ button{
     font-family: helvetica, sans-serif;
     font-size: 20px;
 }
+button a{
+  color: #fff;
+}
 .eventpic{
     display: flex;
     justify-content: center;
@@ -243,9 +246,14 @@ footer ul{
     list-style: none;
     padding: 0;
 }
+.blogpic{
+  display: flex;
+  justify-content: center;
+}
 .blogpic div{
-    width: 300px;
-    height: 300px;
+    width: 450px;
+    height: 450px;
+    margin-top: 115px;
 }
 .blogpic img{
     width: 100%;
@@ -267,4 +275,28 @@ footer a, footer p, footer h6{
 footer h6{
   font-weight: bold;
   font-size: 1em;
+}
+h6{
+  font-size: 18px;
+  color: #702082;
+}
+#postbuttons{
+/*  min-width: 1080px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;*/
+}
+#newspage{
+
+}
+#newspage section{
+  display: flex;
+  border: 1px dotted #702082;
+  margin: 25px auto;
+}
+#newspage button{
+  max-height:50px;
+  min-width: 165px;
+  align-self: flex-end;
+  margin: 0 5px 10px 0;
 }
