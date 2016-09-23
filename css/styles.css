@@ -100,7 +100,7 @@ nav{
   max-width: 1080px;
   justify-content: space-between;
 }
-nav a{
+a{
   color:#702082;
 }
 nav img{
@@ -215,6 +215,9 @@ footer{
     background-color:#d0d3d4;
     padding: 0 100px;
 }
+footer section{
+
+}
 .footerlinks{
     display: flex;
     flex-flow: row wrap;
@@ -227,13 +230,14 @@ footer .copy{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    margin: 0 65px;
 }
 footer .copy ul{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     align-content: center;
-    min-width: 90px;
+    min-width: 150px;
 }
 footer ul{
     list-style: none;
