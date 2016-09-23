@@ -33,7 +33,10 @@ button {}
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
-
+@font-face {
+  font-family: "new gothic";
+  src: url("../fonts/NEWSGOTHICCONDENSEDBT.TTF") format("truetype");
+}
 h1 {
     font-family : NewsGoth Cn BT, sans-serif;
     font-weight : bold;
@@ -77,50 +80,78 @@ p {
 /*----------------------------------------------------------------
 # Author's CSS styles
 -----------------------------------------------------------------*/
+body{
+    margin: 0 auto;
+    padding: 0;
+}
 header{
     background:#eed484;
-    display: flex;
-    flex-flow: row;
-    justify-content: space-between;
-    padding: 0 100px;
+    padding: 10px 0;
 }
 main{
     max-width: 1000px;
     margin: 2% auto;
 }
-header img{
-    width:235px;
-}
-header ul{
-    min-width: 320px;
-}
 nav{
-    display: inline-flex;
-    align-items: center;
+  align-items: center;
+  display: flex;
+  flex-flow: row;
+  margin: 0px auto;
+  max-width: 1080px;
+  justify-content: space-between;
+}
+nav a{
+  color:#702082;
+}
+nav img{
+  max-height: 80px;
 }
 nav ul{
     display: flex;
     flex-flow: row wrap;
-    list-style: none;
+    list-style: none;git push -u origin master
     justify-content: space-around;
+}
+nav ul li{
+  padding: 0 5px;
 }
 .menu-item{
     border: 1px solid black;
     padding: 3px;
 }
-.gradient {
+.hero {
     padding: 8% 42% 5% 8%;
+    background-size: cover;
+    /*background-position: 0 -525px;*/
+    min-height: 280px;
+
+    background : -moz-linear-gradient(0% 50% 0deg,rgba(243, 201, 60, .6) 0%,rgba(213, 104, 33, .6) 50%,rgba(104, 43, 130, .6) 100%), url("../img/heropic.jpg") center 35% / cover no-repeat;
+    background : -webkit-linear-gradient(0deg, rgba(243, 201, 60, .6) 0%, rgba(213, 104, 33, .6) 50%, rgba(104, 43, 130, .6) 100%), url("../img/heropic.jpg") center 35% / cover no-repeat;
+    background : -webkit-gradient(linear,0% 50% ,100% 50% ,color-stop(0,rgba(243, 201, 60, .6) ),color-stop(0.5,rgba(213, 104, 33, .6) ),color-stop(1,rgba(104, 43, 130, .6) )), url("../img/heropic.jpg"), no-repeat 50% 50%;
+    background : -o-linear-gradient(0deg, rgba(243, 201, 60, .6) 0%, rgba(213, 104, 33, .6) 50%, rgba(104, 43, 130, .6) 100%), url("../img/heropic.jpg") center 35% / cover no-repeat;
+    background : -ms-linear-gradient(0deg, rgba(243, 201, 60, .6) 0%, rgba(213, 104, 33, .6) 50%, rgba(104, 43, 130, .6) 100%), url("../img/heropic.jpg") center 35% / cover no-repeat;
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#F3C93C', endColorstr='#682B82' ,GradientType=0)";
+    background : linear-gradient(90deg, rgba(243, 201, 60, .6) 0%, rgba(213, 104, 33, .6) 50%, rgba(104, 43, 130, .6) 100%), url("../img/heropic.jpg") center 35% / cover no-repeat;
+    filter: alpha(opacity=60) progid:DXImageTransform.Microsoft.Alpha(opacity=60) progid:DXImageTransform.Microsoft.gradient(startColorstr='#F3C93C',endColorstr='#682B82' , GradientType=1);
+    background-blend-mode: lighten;
 }
-.gradient p{
+.hero p{
     color: #ffffff;
 }
 button{
-    background:#cb6015;
+  background: #cb6015;
     color: #ffffff;
+    padding: 5px 25px;
+    text-transform: uppercase;
+    border: none;
+    min-height: 44px;
+    font-family: helvetica, sans-serif;
+    font-size: 20px;
 }
 .eventpic{
-    width: 250px;
-    height:200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .eventpic img{
     width: 113%;
@@ -130,10 +161,16 @@ button{
 }
 p{
     line-height: 22px;
+    font-size: 1em;
 }
-.sponsors{}
+.sponsors{
+
+}
 .sponsors img{
     width: 10%;
+}
+.tcblogo{
+  padding: 20px 0;
 }
 .container{
     display: flex;
@@ -143,6 +180,14 @@ p{
 .container section{
     width: 30%;
     background: #eed484;
+    overflow: hidden;
+}
+h4{
+    text-transform: uppercase;
+    padding-left:20px;
+}
+.container section p{
+  padding: 0px 22px;
 }
 .message{
     width: 50%;
@@ -161,6 +206,10 @@ p{
 }
 .team img{
     width: 100%;
+}
+h2{
+  font-size: 32px;
+  font-family: "new gothic";
 }
 footer{
     background-color:#d0d3d4;
@@ -188,8 +237,7 @@ footer .copy ul{
 }
 footer ul{
     list-style: none;
-
-
+    padding: 0;
 }
 .blogpic div{
     width: 300px;
@@ -205,4 +253,14 @@ footer ul{
 }
 .soloblog section{
     width: 50%;
+}
+footer .address p{
+  line-height: 1%;
+}
+footer a, footer p, footer h6{
+  color: #702082;
+}
+footer h6{
+  font-weight: bold;
+  font-size: 1em;
 }
