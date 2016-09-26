@@ -86,7 +86,7 @@ body{
 }
 header{
     background:#eed484;
-    padding: 10px 0;
+    padding: 10px 10px;
 }
 main{
     max-width: 1000px;
@@ -139,6 +139,7 @@ nav ul li{
     color: #ffffff;
 }
 button{
+  margin-top: 20px;
   background: #cb6015;
     color: #ffffff;
     padding: 5px 25px;
@@ -195,6 +196,7 @@ h4{
 .message{
     width: 50%;
     min-width: 350px;
+    font-size: 16pt;
 }
 .team{
     display: flex;
@@ -218,7 +220,7 @@ footer{
     background-color:#d0d3d4;
     padding: 0 100px;
 }
-footer section{
+.footerlinks section{
 
 }
 .footerlinks{
@@ -299,4 +301,83 @@ h6{
   min-width: 165px;
   align-self: flex-end;
   margin: 0 5px 10px 0;
+}
+@media (min-width:550px) and (max-width:950px),(min-device-width:550px) and (max-device-width:950px){
+  header{
+    padding: 0 10px;
+  }
+  .hero h1{
+    width: 185%;
+  }
+  .hero p{
+    width: 180%;
+  }
+main{
+  text-align: center;
+}
+  .container section{
+    width: 90%;
+  }
+  .eventpic{
+    max-width: 900px;
+  }
+  .eventpic img{
+    width:100%;
+  }
+  .message{
+    margin: 0 auto;
+    text-align: left;
+  }
+  .footerlinks{
+    flex-flow: column;
+    margin: 0 112px;
+  }
+  footer .address p{
+    margin: 20px -52px;
+  }
+}
+
+@media (min-width:0px) and (max-width:550px),(min-device-width:0px) and (max-device-width:550px) {
+  .hero h1{
+    width: 185%;
+  }
+  .hero p{
+    width: 180%;
+  }
+  footer .address p{
+    margin: 13px -110px;
+    line-height: 60%;
+  }
+  main{
+    text-align: center;
+  }
+    .container section{
+      width: 95%;
+    }
+    .eventpic{
+      max-width: 900px;
+    }
+    .eventpic img{
+      width:100%;
+    }
+    .message{
+      margin: 0 auto;
+      text-align: left;
+    }
+    footer p{
+      margin: 0 -140px;
+      text-align: center;
+    }
+    .hero p{
+      width: 360px;
+    }
+    button{
+      width:330px;
+    }
+    .sponsors img{
+      width:250px;
+    }
+    .footerlinks{
+      flex-flow: row wrap;
+    }
 }
