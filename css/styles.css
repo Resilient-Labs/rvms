@@ -302,7 +302,7 @@ h6{
   align-self: flex-end;
   margin: 0 5px 10px 0;
 }
-@media (min-width:550px) and (max-width:950px),(min-device-width:550px) and (max-device-width:950px){
+@media (min-width:555px) and (max-width:950px),(min-device-width:555px) and (max-device-width:950px){
   header{
     padding: 0 10px;
   }
@@ -337,7 +337,13 @@ main{
   }
 }
 
-@media (min-width:0px) and (max-width:550px),(min-device-width:0px) and (max-device-width:550px) {
+@media (min-width:0px) and (max-width:555px),(min-device-width:0px) and (max-device-width:555px) {
+  header nav ul li{
+    display: none;
+  }
+  .menu-item{
+    display: block;
+  }
   .hero h1{
     width: 185%;
   }
