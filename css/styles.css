@@ -387,3 +387,28 @@ main{
       flex-flow: row wrap;
     }
 }
+@media (min-width:760px) and (max-width:950px),(min-device-width:760px) and (max-device-width:950px){
+  .team{
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+@media (min-width:600px) and (max-width:760px),(min-device-width:600px) and (max-device-width:760px){
+  .team{
+    max-width: 560px;
+    margin: 0 auto;
+  }
+  .team section{
+    width: 50%;
+  }
+}
+
+@media (min-width:0px) and (max-width:600px),(min-device-width:0px) and (max-device-width:600px){
+  .team{
+    max-width: 250px;
+    margin: 0 auto;
+  }
+  .team section{
+    width: 100%;
+  }
+}
