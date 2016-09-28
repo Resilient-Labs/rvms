@@ -301,6 +301,38 @@ h6{
   margin: 0;
   line-height: 1%;
 }
+.mappage{
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+.mappage ul{
+  width: 30%;
+  padding: 0;
+}
+.mappage ul li{
+  display: flex;
+  justify-content: space-between;
+  border: 1px dotted #702082;
+  margin: 30px auto;
+  max-height: 54px;
+  min-height: 54px;
+}
+.mappage ul li div{
+  padding: 5px;
+}
+.mappage ul li h6{
+  margin: 0;
+}
+.mappage ul li p{
+  margin: 0;
+}
+.mappage ul li button{
+  margin: 0;
+  max-width: 62px;
+}
+
+
 @media (min-width:555px) and (max-width:950px),(min-device-width:555px) and (max-device-width:950px){
   header{
     padding: 0 10px;
@@ -333,6 +365,15 @@ main{
   }
   footer .address p{
     margin: 20px -52px;
+  }
+  .mappage{
+    max-width: 700px;
+    margin: 0 auto;
+    flex-flow: column;
+  }
+  .mappage ul{
+    width: 50%;
+    margin: 0 auto;
   }
 }
 
@@ -385,12 +426,22 @@ main{
     .footerlinks{
       flex-flow: row wrap;
     }
+    .mappage{
+      max-width: 300px;
+      margin: 0 auto;
+      flex-flow: column;
+    }
+    .mappage ul{
+      width: 100%;
+    }
 }
 @media (min-width:760px) and (max-width:950px),(min-device-width:760px) and (max-device-width:950px){
   .team{
     max-width: 800px;
     margin: 0 auto;
+
   }
+
 }
 @media (min-width:600px) and (max-width:760px),(min-device-width:600px) and (max-device-width:760px){
   .team{
