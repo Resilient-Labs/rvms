@@ -116,7 +116,7 @@
       padding: 0 5px;
     }
     .menu-item{
-        border: 1px solid black;
+        border: 1px solid #702082;
         padding: 3px;
     }
     .hero {
@@ -358,6 +358,10 @@
 
 
     @media (min-width:555px) and (max-width:950px),(min-device-width:555px) and (max-device-width:950px){
+      header nav ul{
+        margin: 15px;
+        padding: 0;
+      }
       header{
         padding: 0 10px;
       }
@@ -406,9 +410,17 @@
       .map > div{
         width: 75%;
       }
+      nav ul{
+        margin: 15px auto;
+        padding: 0;
+      }
     }
 
     @media (min-width:0px) and (max-width:555px),(min-device-width:0px) and (max-device-width:555px) {
+      header nav ul{
+        margin: 15px;
+        padding: 0;
+      }
       header nav ul li{
         display: none;
       }
@@ -472,6 +484,11 @@
         }
         .map > div{
           width: 75%;
+        }
+        nav ul{
+          flex-flow: column;
+          margin: 15px auto;
+          padding: 0;
         }
     }
     @media (min-width:760px) and (max-width:950px),(min-device-width:760px) and (max-device-width:950px){
