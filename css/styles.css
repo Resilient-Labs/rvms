@@ -358,9 +358,18 @@
     .soloteam section{
       display: flex;
       flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .soloteam section .text{
+      width: 65%;
     }
     .soloteam img{
       width: 100%;
+    }
+    .soloteam .email{
+      display: flex;
+      justify-content: flex-end;
     }
 
     @media (min-width:555px) and (max-width:950px),(min-device-width:555px) and (max-device-width:950px){
@@ -420,6 +429,13 @@
         margin: 15px auto;
         padding: 0;
       }
+      .soloteam section{
+        flex-flow: column-reverse;
+      }
+      .soloteam .email{
+        justify-content: center;
+      }
+
     }
 
     @media (min-width:0px) and (max-width:555px),(min-device-width:0px) and (max-device-width:555px) {
@@ -495,6 +511,12 @@
           flex-flow: column;
           margin: 15px auto;
           padding: 0;
+        }
+        .soloteam section{
+          flex-flow: column-reverse;
+        }
+        .soloteam .email{
+          justify-content: center;
         }
     }
     @media (min-width:760px) and (max-width:950px),(min-device-width:760px) and (max-device-width:950px){
