@@ -372,7 +372,61 @@
       display: flex;
       justify-content: flex-end;
     }
-
+    .involved p{
+      width: 50%;
+    }
+    .involved .longp{
+      width: 100%;
+    }
+    .involved ul{
+      display: flex;
+      list-style: none;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      padding: 0;
+    }
+    .involved ul li{
+      width: 33%;
+      margin: 40px 0;
+    }
+    .involved h6{
+      margin: 0;
+      width: 100%;
+    }
+    .involved ul li p{
+      margin: 0;
+      width: 100%;
+    }
+    .involved .longp a{
+      text-decoration: underline;
+    }
+    .news p{
+      width: 50%;
+    }
+    .news ul{
+      display: flex;
+      flex-flow: column;
+      padding: 0;
+    }
+    .news ul li{
+      display: flex;
+      flex-flow: row nowrap;
+      border: 1px dotted #702082;
+      margin: 15px 0;
+      padding: 20px;
+    }
+    .news ul li h6{
+      margin: 0;
+    }
+    .news ul li p{
+      margin: 0;
+      width: 70%;
+    }
+    .news ul li button{
+      max-height: 60px;
+      min-width: 170px;
+      align-self: flex-end;
+    }
     @media (min-width:555px) and (max-width:950px),(min-device-width:555px) and (max-device-width:950px){
       header nav ul{
         margin: 15px;
