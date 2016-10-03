@@ -540,9 +540,6 @@
       .hero h1{
         width: 185%;
       }
-      .hero p{
-        width: 180%;
-      }
       footer .address p{
         margin: 13px -110px;
         line-height: 60%;
@@ -568,7 +565,7 @@
           text-align: center;
         }
         .hero p{
-          width: 360px;
+          width: 330px;
         }
         button{
           width:330px;
