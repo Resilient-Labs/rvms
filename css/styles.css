@@ -118,6 +118,8 @@ html{}
           -webkit-justify-content: space-between;
           height: 80px;
           border-bottom: 1px solid #d0d3d4;
+          background-color: #fff;
+          position: fixed;
         }
         nav ul{
           list-style: none;
@@ -249,34 +251,101 @@ html{}
         .wrapper{
           max-width: 960px;
           margin: 20px auto;
-
         }
+
+        #side-menu {
+          width: 200px;
+          position: fixed;
+          height: 100vh;
+          background-color: red;
+        }
+        
+        #menu:hover {
+          cursor: pointer;
+        }
+
+        footer {
+          background-color: #d0d3d4;
+          padding: 20px 0;
+        }
+
+        footer .page_links {
+          display: flex;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          align-items: flex-start;
+          -webkit-align-items: flex-start;
+          justify-content: space-between;
+          -webkit-justify-content: space-between;
+          flex-flow: row wrap;
+          -webkit-flex-flow: row wrap;
+        }
+
+        footer .page_links ul {
+          width: 25%;
+          padding: 0;
+          list-style: none;
+        }
+
+        footer .page_links img {
+          max-height: 80px;
+        }
+
+        footer .copy, footer .copy ul {
+          display: flex;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          align-items: center;
+          -webkit-align-items: center;
+          justify-content: space-between;
+          -webkit-justify-content: space-between;
+          flex-flow: row wrap;
+          -webkit-flex-flow: row wrap;
+        }
+
+        footer .copy ul {
+          list-style: none;
+          width: 140px;
+        }
+
         @media (min-width: 240px) and (max-width: 768px), (min-device-width:240px) and (max-device-width:768px) {
-          nav ul{
+          nav ul {
             display: none;
           }
-          .hero.index, .hero{
+
+          .hero.index, .hero {
             padding: 40px;
           }
-          .wrapper{
+
+          .wrapper {
             padding: 0 40px;
           }
-          article section{
+
+          article section {
             width: 100%;
             margin: 40px auto;
           }
-          article section div{
+
+          article section div {
             height: 50%;
             max-height: 800px;
           }
+
           article section h3, article section h4 {
             margin-left: 40px;
             margin-right: 40px;
           }
+
           .sponsors img {
             width: 45%;
             height: auto;
           }
+
+          footer .page_links ul {
+            width: 50%;
+          }
+        }
+
 
 
 
