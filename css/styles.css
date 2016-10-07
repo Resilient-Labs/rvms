@@ -105,6 +105,11 @@ html{}
         body{
           margin: 0;
         }
+        ul{
+          display: flex;
+          list-style: none;
+          padding: 0;
+        }
         nav{
           display: flex;
           display: -ms-flexbox;
@@ -120,6 +125,7 @@ html{}
           border-bottom: 1px solid #d0d3d4;
           background-color: #fff;
           position: fixed;
+          top: 0;
         }
         nav ul{
           list-style: none;
@@ -176,6 +182,7 @@ html{}
         }
         button{
           margin-top: 20px;
+          margin-right: 40px;
           background: #cb6015;
           color: #ffffff;
           padding: 5px 25px;
@@ -185,7 +192,7 @@ html{}
           font-family: helvetica, sans-serif;
           font-size: 20px;
         }
-        button span{
+        nav button span{
           display: block;
           text-transform: none;
         }
@@ -252,18 +259,49 @@ html{}
           max-width: 960px;
           margin: 20px auto;
         }
-
+        .undernav{
+          padding-top: 200px;
+          padding-bottom: 50px;
+        }
+        .text_picture{
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: space-between;
+        }
+        .text_picture section{
+          width: 45%;
+        }
+        .text_picture section div{
+          width: 100%;
+          height: auto;
+        }
+        .text_picture section div img{
+          width: 100%;
+          height: auto;
+        }
         #side-menu {
           width: 200px;
           position: fixed;
           height: 100vh;
           background-color: red;
         }
-        
+
         #menu:hover {
           cursor: pointer;
         }
-
+        #postbuttons{
+          display: flex;
+          flex-flow: row;
+          justify-content: space-between;
+        }
+        #postbuttons section{
+          max-width: 275px;
+          min-width: 270px;
+        }
+        #postbuttons a{
+          border: 1px solid grey;
+          padding: 10px 50px;
+        }
         footer {
           background-color: #d0d3d4;
           padding: 20px 0;
@@ -340,10 +378,20 @@ html{}
             width: 45%;
             height: auto;
           }
-
+          .text_picture{
+            flex-flow: column-reverse;
+          }
+          .text_picture section{
+            width: 100%;
+          }
+          #postbuttons{
+            flex-flow: column;
+            align-items: center;
+          }
           footer .page_links ul {
             width: 50%;
           }
+
         }
 
 
