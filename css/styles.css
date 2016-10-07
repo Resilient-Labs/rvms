@@ -168,7 +168,7 @@ html{}
           font-size: 40px;
           width: 100%;
         }
-        .hero.index{
+        .hero{
           background : -moz-linear-gradient(0% 50% 0deg,rgba(243, 201, 60, .6) 0%,rgba(213, 104, 33, .6) 50%,rgba(104, 43, 130, .6) 100%), url("../img/heropic.jpg") center 35% / cover no-repeat;
           background : -webkit-linear-gradient(0deg, rgba(243, 201, 60, .6) 0%, rgba(213, 104, 33, .6) 50%, rgba(104, 43, 130, .6) 100%), url("../img/heropic.jpg") center 35% / cover no-repeat;
           background : -webkit-gradient(linear,0% 50% ,100% 50% ,color-stop(0,rgba(243, 201, 60, .6) ),color-stop(0.5,rgba(213, 104, 33, .6) ),color-stop(1,rgba(104, 43, 130, .6) )), url("../img/heropic.jpg"), no-repeat 50% 50%;
@@ -179,6 +179,24 @@ html{}
           filter: alpha(opacity=60) progid:DXImageTransform.Microsoft.Alpha(opacity=60) progid:DXImageTransform.Microsoft.gradient(startColorstr='#F3C93C',endColorstr='#682B82' , GradientType=1);
           background-blend-mode: lighten;
           padding: 40px 0;
+        }
+        .hero.getinvolved{
+          background : -moz-linear-gradient(0% 50% 0deg,rgba(243, 201, 60, .6) 0%,rgba(213, 104, 33, .6) 50%,rgba(104, 43, 130, .6) 100%), url("../img/banner2.jpg") center 35% / cover no-repeat;
+          background : -webkit-linear-gradient(0deg, rgba(243, 201, 60, .6) 0%, rgba(213, 104, 33, .6) 50%, rgba(104, 43, 130, .6) 100%), url("../img/banner2.jpg") center 35% / cover no-repeat;
+          background : -webkit-gradient(linear,0% 50% ,100% 50% ,color-stop(0,rgba(243, 201, 60, .6) ),color-stop(0.5,rgba(213, 104, 33, .6) ),color-stop(1,rgba(104, 43, 130, .6) )), url("../img/heropic.jpg"), no-repeat 50% 50%;
+          background : -o-linear-gradient(0deg, rgba(243, 201, 60, .6) 0%, rgba(213, 104, 33, .6) 50%, rgba(104, 43, 130, .6) 100%), url("../img/banner2.jpg") center 35% / cover no-repeat;
+          background : -ms-linear-gradient(0deg, rgba(243, 201, 60, .6) 0%, rgba(213, 104, 33, .6) 50%, rgba(104, 43, 130, .6) 100%), url("../img/banner2.jpg") center 35% / cover no-repeat;
+          -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#F3C93C', endColorstr='#682B82' ,GradientType=0)";
+          background : linear-gradient(90deg, rgba(243, 201, 60, .6) 0%, rgba(213, 104, 33, .6) 50%, rgba(104, 43, 130, .6) 100%), url("../img/banner2.jpg") center 35% / cover no-repeat;
+          filter: alpha(opacity=60) progid:DXImageTransform.Microsoft.Alpha(opacity=60) progid:DXImageTransform.Microsoft.gradient(startColorstr='#F3C93C',endColorstr='#682B82' , GradientType=1);
+          background-blend-mode: lighten;
+        }
+        .getinvolved h1{
+          text-align: center;
+          color: #fff;
+          text-decoration: underline;
+          text-decoration-color: #702082;
+          height: 320px;
         }
         button{
           margin-top: 20px;
@@ -319,7 +337,17 @@ html{}
           width: 100%;
           height:auto;
         }
-
+        .email{
+          text-align: right;
+        }
+        .rozziebucks{
+          flex-flow: row wrap;
+          justify-content: space-between;
+        }
+        .rozziebucks li{
+          width: 31%;
+          margin: 30px auto;
+        }
         footer {
           background-color: #d0d3d4;
           padding: 20px 0;
