@@ -302,6 +302,24 @@ html{}
           border: 1px solid grey;
           padding: 10px 50px;
         }
+        .team{
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: space-between;
+        }
+        .team section{
+          width: 31%;
+        }
+        .team section div{
+          width: 100%;
+          height: auto;
+          overflow: hidden;
+        }
+        .team img{
+          width: 100%;
+          height:auto;
+        }
+
         footer {
           background-color: #d0d3d4;
           padding: 20px 0;
