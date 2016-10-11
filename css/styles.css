@@ -33,7 +33,9 @@ html{}
       a:hover, a button:hover {
         cursor: pointer;
       }
-      button {}
+      button {
+        height: 50px;
+      }
 
 
         /*--------------------------------------------------------------
@@ -191,6 +193,11 @@ html{}
           -webkit-align-items: center;
           justify-content: center;
           -webkit-justify-content: center;
+
+        }
+        .hero p{
+          color: #fff;
+          width: 100%;
         }
         .hero.getinvolved{
           background : -moz-linear-gradient(0% 50% 0deg,rgba(243, 201, 60, .6) 0%,rgba(213, 104, 33, .6) 50%,rgba(104, 43, 130, .6) 100%), url("../img/banner2.jpg") center 35% / cover no-repeat;
@@ -217,9 +224,24 @@ html{}
         .getinvolved h1, .news_ev h1{
           text-align: center;
           color: #fff;
-          text-decoration: underline;
+          margin-bottom: 15px;
+
+        }
+        .getinvolved , .news_ev{
+          display: flex;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          flex-flow: column;
+          -webkit-flex-flow:column;
+
         }
 
+        .line{
+          width: 215px;
+          height: 10px;
+          border: 1px solid #702082;
+          background-color: #702082;
+        }
         button{
           margin-top: 20px;
           margin-right: 40px;
@@ -292,17 +314,18 @@ html{}
           -webkit-flex-flow: row wrap;
           -webkit-align-items:center;
         }
-        .hero p{
-          width: 100%;
-        }
         .wrapper{
           max-width: 960px;
           margin: 20px auto;
         }
         .text_picture{
           display: flex;
+          display: -ms-flexbox;
+          display: -webkit-flex;
           flex-flow: row wrap;
           justify-content: space-between;
+          -webkit-flex-flow: row wrap;
+          -webkit-justify-content:space-between;
         }
         .text_picture section{
           width: 45%;
@@ -327,8 +350,12 @@ html{}
         }
         #postbuttons{
           display: flex;
+          display: -ms-flexbox;
+          display: -webkit-flex;
           flex-flow: row;
+          -webkit-flex-flow:row;
           justify-content: space-between;
+          -webkit-justify-content:space-between;
         }
         #postbuttons section{
           max-width: 275px;
@@ -340,6 +367,8 @@ html{}
         }
         .team{
           display: flex;
+          display: -ms-flexbox;
+          display: -webkit-flex;
           flex-flow: row wrap;
           justify-content: space-between;
         }
@@ -414,16 +443,22 @@ html{}
         }
         ul.three-buttons{
           display: flex;
+          display: -ms-flexbox;
+          display: -webkit-flex;
         }
         .undernav{
           padding-top: 200px;
         }
         .undernav ul{
           display: flex;
+          display: -ms-flexbox;
+          display: -webkit-flex;
           justify-content: flex-end;
+          -webkit-justify-content:flex-end;
         }
         .undernav ul li{
           margin: 20px;
+          padding: 0;
         }
         .fullwidthpic{
           width: 100%;
@@ -434,6 +469,7 @@ html{}
         display: -ms-flexbox;
         display: -webkit-flex;
         flex-flow: column;
+        -webkit-flex-flow:column;
         padding: 0;
         }
         .events p{
@@ -444,18 +480,24 @@ html{}
         display: -ms-flexbox;
         display: -webkit-flex;
         flex-flow: row nowrap;
+        -webkit-flex-flow: row nowrap;
         border: 1px dotted #702082;
         margin: 15px 0;
         padding: 10px;
         max-height: 50px;
         justify-content: space-between;
+        -webkit-justify-content:space-between;
         align-items: center;
+        -webkit-align-items:center;
         }
 
         .events li button{
         max-height: 60px;
         min-width: 170px;
         align-self: flex-end;
+        -webkit-align-self:flex-end;
+        margin-right: 0;
+}
         }
 
         .right{
@@ -463,25 +505,35 @@ html{}
         display: -ms-flexbox;
         display: -webkit-flex;
         justify-content: flex-end;
+        -webkit-justify-content:flex-end;
+        width: 100%;
         }
-
+        .right a{
+          text-align: right;
+        }
         .events.smaller{
 
         }
         .events.smaller ul{
           display: flex;
+          display: -ms-flexbox;
+          display: -webkit-flex;
           flex-flow: row wrap;
           justify-content: space-between;
           margin: 0;
+          -webkit-flex-flow:row wrap;
+          -webkit-justify-content: space-between;
         }
 
         .events.smaller ul li{
           width: 26%;
+          padding: 0;
         }
 
         .events.smaller li button{
           min-width: 60px;
           margin: 0;
+          height: 100%;
         }
 
         .events.smaller h2{
@@ -535,7 +587,9 @@ html{}
           }
           #postbuttons{
             flex-flow: column;
+            -webkit-flex-flow:column;
             align-items: center;
+            -webkit-align-items:center;
           }
           footer .page_links ul {
             width: 50%;
@@ -545,8 +599,38 @@ html{}
             width: 100%;
             margin: 10px auto;
           }
+          .events li{
+            flex-flow: column;
+            -webkit-flex-flow:column;
+            max-height: 155px;
+          }
+          .events.thicker li{
+              margin-bottom: 260px;
+          }
+          .events li button{
+            align-self: center;
+            -webkit-align-self:center;
+            width: 100%;
+            margin: 0 auto;
+          }
+          ul.three-buttons{
+            flex-flow: column;
+            -webkit-flex-flow:column;
+          }
+          .team section{
+            width: 100%;
+          }
+          .undernav ul li {
+            margin: 0 auto;
+            width: 100%;
+            margin: 15px auto;
+          }
+          .events.smaller ul li {
+            width: 100%;
+          }
 
-        }
+      }
+
 
 
 
