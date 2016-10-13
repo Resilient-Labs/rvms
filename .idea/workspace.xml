@@ -4,14 +4,6 @@
     <list default="true" id="f68772ad-444b-4104-8022-49fe32d62b89" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/styles.css" afterPath="$PROJECT_DIR$/css/styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/blog-solo.html" afterPath="$PROJECT_DIR$/html/blog-solo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/farmers-home.html" afterPath="$PROJECT_DIR$/html/farmers-home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/index.html" afterPath="$PROJECT_DIR$/html/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/interactive-map.html" afterPath="$PROJECT_DIR$/html/interactive-map.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/involved.html" afterPath="$PROJECT_DIR$/html/involved.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/news-archive.html" afterPath="$PROJECT_DIR$/html/news-archive.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/team-solo.html" afterPath="$PROJECT_DIR$/html/team-solo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/team.html" afterPath="$PROJECT_DIR$/html/team.html" />
     </list>
     <ignored path="rvms.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -55,11 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="styles.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="604" column="14" selection-start-line="604" selection-start-column="14" selection-end-line="604" selection-end-column="14" />
+            <state relative-caret-position="696">
+              <caret line="726" column="26" selection-start-line="726" selection-start-column="26" selection-end-line="726" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -68,8 +60,8 @@
       <file leaf-file-name="interactive-map.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/interactive-map.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="382" column="0" selection-start-line="382" selection-start-column="0" selection-end-line="451" selection-end-column="9" />
+            <state relative-caret-position="626">
+              <caret line="463" column="9" selection-start-line="463" selection-start-column="9" selection-end-line="463" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -115,7 +107,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="farmers-home.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="farmers-home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/farmers-home.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="736">
@@ -161,7 +153,6 @@
         <option value="$PROJECT_DIR$/html/footer.html" />
         <option value="$PROJECT_DIR$/js/scripts.js" />
         <option value="$PROJECT_DIR$/html/interactive-map.html" />
-        <option value="$PROJECT_DIR$/css/styles.css" />
         <option value="$PROJECT_DIR$/html/involved.html" />
         <option value="$PROJECT_DIR$/html/index.html" />
         <option value="$PROJECT_DIR$/html/blog-solo.html" />
@@ -169,6 +160,7 @@
         <option value="$PROJECT_DIR$/html/news-archive.html" />
         <option value="$PROJECT_DIR$/html/team-solo.html" />
         <option value="$PROJECT_DIR$/html/farmers-home.html" />
+        <option value="$PROJECT_DIR$/css/styles.css" />
       </list>
     </option>
   </component>
@@ -729,12 +721,12 @@
       <workItem from="1475813560414" duration="5794000" />
       <workItem from="1475869661501" duration="2730000" />
       <workItem from="1476285503352" duration="20102000" />
-      <workItem from="1476374539799" duration="2236000" />
+      <workItem from="1476374539799" duration="2360000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66718000" />
+    <option name="totallyTimeSpent" value="66842000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1924" height="1048" extended-state="0" />
@@ -1131,14 +1123,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="604" column="14" selection-start-line="604" selection-start-column="14" selection-end-line="604" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/involved.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="714">
@@ -1151,14 +1135,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-826">
           <caret line="85" column="24" selection-start-line="85" selection-start-column="24" selection-end-line="85" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/interactive-map.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="382" column="0" selection-start-line="382" selection-start-column="0" selection-end-line="451" selection-end-column="9" />
           <folding />
         </state>
       </provider>
@@ -1199,6 +1175,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="736">
           <caret line="167" column="9" selection-start-line="167" selection-start-column="9" selection-end-line="167" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/interactive-map.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="626">
+          <caret line="463" column="9" selection-start-line="463" selection-start-column="9" selection-end-line="463" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="696">
+          <caret line="726" column="26" selection-start-line="726" selection-start-column="26" selection-end-line="726" selection-end-column="26" />
           <folding />
         </state>
       </provider>
