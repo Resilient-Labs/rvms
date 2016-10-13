@@ -426,14 +426,14 @@
                 <a href="#"><li>Vacancies/Map</li></a>
             </ul>
 
-            <ul>Address
+            <ul class="full-width">Address
                 <li>Roslindale Village Main Street,</li>
                 <li>4236 Washington Street</li>
                 <li>Roslindale, MA 02131</li>
                 <li>617-327-4065</li>
             </ul>
 
-            <ul>
+            <ul class="full-width">
                 <li><img src="../img/rvms_logo3.png"></li>
             </ul>
         </section>
@@ -450,6 +450,18 @@
         </section>
     </div>
 </footer>
+
+<script type="text/javascript">
+    var locs = [];
+    var allP = document.getElementsByTagName('p');
+    // returns an array of addresses
+    for (var i =0; i < allP.length; i++) {
+        var street = allP[i].innerHTML;
+        locs.push(street);
+    }
+    console.log(locs);
+
+</script>
 
 </body>
 </html>

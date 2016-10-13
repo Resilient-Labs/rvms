@@ -601,6 +601,10 @@ ul.three-buttons{
 .hide {
   display: none;
 }
+.full-width {
+  width: 100%;
+}
+
 @media (min-width: 240px) and (max-width: 768px) {
   h1 {
     font-size: 36px;
@@ -720,4 +724,5 @@ ul.three-buttons{
     width: 100%;
     height: auto;
   }
+
 }
