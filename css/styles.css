@@ -35,6 +35,7 @@ a:hover, a button:hover {
 }
 button {
   height: 50px;
+  outline: none;
 }
 
 
@@ -194,8 +195,36 @@ nav button{
   -webkit-align-items: center;
   justify-content: center;
   -webkit-justify-content: center;
-
 }
+
+.hero2 {
+  background : -moz-linear-gradient(0deg,rgba(243, 201, 60, .6) 0%,rgba(213, 104, 33, .6) 50%,rgba(104, 43, 130, .6) 100%), center 35% / cover no-repeat;
+  background : -webkit-linear-gradient(0deg, rgba(243, 201, 60, .6) 0%, rgba(213, 104, 33, .6) 50%, rgba(104, 43, 130, .6) 100%), center 35% / cover no-repeat;
+  background : -webkit-gradient(linear,0% 50% ,100% 50% ,color-stop(0,rgba(243, 201, 60, .6) ),color-stop(0.5,rgba(213, 104, 33, .6) ),color-stop(1,rgba(104, 43, 130, .6) )), no-repeat 50% 50%;
+  background : -o-linear-gradient(0deg, rgba(243, 201, 60, .6) 0%, rgba(213, 104, 33, .6) 50%, rgba(104, 43, 130, .6) 100%), center 35% / cover no-repeat;
+  background : -ms-linear-gradient(0deg, rgba(243, 201, 60, .6) 0%, rgba(213, 104, 33, .6) 50%, rgba(104, 43, 130, .6) 100%), center 35% / cover no-repeat;
+  background : linear-gradient(90deg, rgba(243, 201, 60, .6) 0%, rgba(213, 104, 33, .6) 50%, rgba(104, 43, 130, .6) 100%), center 35% / cover no-repeat;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#F3C93C', endColorstr='#682B82' ,GradientType=0)";
+  filter: alpha(opacity=60) progid:DXImageTransform.Microsoft.Alpha(opacity=60) progid:DXImageTransform.Microsoft.gradient(startColorstr='#F3C93C',endColorstr='#682B82' , GradientType=1);
+  background-blend-mode: lighten;
+  padding: 40px 0;
+  height:540px;
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+  overflow: hidden;
+}
+
+.hero2 img {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
 .hero p{
   color: #fff;
   width: 100%;
@@ -347,7 +376,7 @@ article section h3, article section h4{
   background-color: red;
 }
 
-#menu:hover {
+.hamburger-menu:hover {
   cursor: pointer;
 }
 #postbuttons{
@@ -671,9 +700,9 @@ ul.three-buttons{
     -webkit-flex-flow:column;
     max-height: 155px;
   }
-/*  .events.thicker li{
-    margin-bottom: 260px;
-  }*/
+  /*  .events.thicker li{
+      margin-bottom: 260px;
+    }*/
   .events.thicker li div p {display: none;}
 
   .events li button{
@@ -726,4 +755,120 @@ ul.three-buttons{
   .full-width {
     width: 100%!important;
   }
+}
+
+/* MENU STYLING */
+
+.full-screen-menu {
+  position: fixed;
+  width: 0;
+  height: 100vh;
+  background-color: #fff;
+  opacity: 1;
+  transition: .5s;
+  z-index: 9999999;
+}
+
+.full-screen-menu.open {
+  width: 100%;
+  -webkit-animation: slide 0.5s forwards;
+  -webkit-animation-delay: 1s;
+  animation: slide 0.5s forwards;
+  animation-delay: 1s;
+}
+
+.full-screen-menu::after {
+  left: -50%;
+  transition: 2s;
+}
+
+.full-screen-menu.open::after {
+  content: 'ROS';
+  font-family : "NewsGoth Cn BT", Helvetica, sans-serif;
+  font-size: 50vh;
+  color: #666;
+  position: absolute;
+  opacity: .25;
+  left: 33%;
+  -webkit-animation: slide 1s forwards;
+  -webkit-animation-delay: 3s;
+  animation: slide 1s forwards;
+  animation-delay: 3s;
+}
+
+.full-screen-menu ul, .full-screen-menu .hamburger-menu {
+  display: none;
+}
+
+.full-screen-menu.open ul {
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  margin: 40px auto;
+  width: 100%;
+}
+
+.full-screen-menu.open > ul > li > ul {
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-flow: column;
+  -webkit-flex-flow: column;
+}
+
+.full-screen-menu.open > ul > li {
+  width: 25%;
+}
+
+.full-screen-menu.open ul li a {
+  color: #666;
+}
+
+.full-screen-menu .hamburger-menu {
+  background-color: transparent;
+}
+
+.full-screen-menu .hamburger-menu span {
+  color: #666;
+}
+
+.close {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+}
+
+.close::before, .close::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  margin-top: -1px;
+  background: #000;
+}
+
+.close::before:hover, .close::after:hover, .hairline:hover {
+  color: red;
+}
+
+.close::before{
+  transform: rotate(45deg);
+}
+
+.close::after {
+  transform: rotate(-45deg);
+}
+
+.hairline::before, .hairline::after {
+  height: 1px;
+}
+
+.hide-overflow {
+  overflow: hidden;
 }

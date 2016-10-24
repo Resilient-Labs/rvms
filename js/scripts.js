@@ -7,8 +7,17 @@ var clicks = 0;
 function showMenu() {
     clicks++;
     console.log(clicks + " click");
+
 }
-menu.onclick = function() {showMenu()};
+//menu.onclick = function() {showMenu()};
+
+
+$('.hamburger-menu').on('click', function () {
+    $('.full-screen-menu').toggleClass('open');
+    $('.hamburger-menu').toggle();
+    $('body, html').toggleClass('hide-overflow')
+    console.log('clicked');
+});
 
 // Code for filtering through the team / board members
 var $grid = $('.team').isotope({
